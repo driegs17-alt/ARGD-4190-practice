@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: #f5f2eb;
     color: #111111;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "apotek" Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -26,7 +26,9 @@ nav ul {
 nav a {
     color: #111111;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 header {
@@ -75,8 +77,4 @@ section img {
 
 section h3 {
     padding: 0 15px 15px;
-}
-
-title {
-    font-size: 20px;
 }
