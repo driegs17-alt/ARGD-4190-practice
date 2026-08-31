@@ -1,96 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works | Dylan Riegert</title>
-
-    <link rel="stylesheet" href="https://use.typekit.net/uzw7mqq.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected graphic design work by Dylan Riegert.">
+  <title>Work — Dylan Riegert</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="site-nav">
-        <a class="logo-link" href="index.html">
-            <img src="assets/Screenshot 2024-08-19 at 11.34.45 AM.png" alt="Dylan Riegert logo">
-        </a>
-
-        <ul class="nav-links">
-            <li><a href="index.html">About</a></li>
-            <li><a class="active" href="works.html">Works</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="works.html" aria-current="page">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section class="page-intro">
-            <p class="eyebrow">Selected Projects</p>
-            <h1>Works</h1>
-            <p>
-                A selection of graphic design, information design, poster,
-                and visual-system projects.
-            </p>
-        </section>
+  <main>
+    <section class="works-header" aria-labelledby="work-title">
+      <p class="eyebrow">Selected work</p>
+      <h1 id="work-title">Design with<br>clarity and character.</h1>
+      <p>A selection of visual systems, editorial work, campaigns, and posters made to communicate clearly and leave a lasting impression.</p>
+    </section>
 
-        <section class="project-grid">
-            <article class="project-card">
-                <img src="assets/milk.cartons.jpg" alt="Visual Codes for Milk cartons">
+    <section class="works-section" aria-labelledby="systems-title">
+      <header class="works-section-header">
+        <p class="eyebrow">01 · Visual systems</p>
+        <h2 id="systems-title">Information made intuitive.</h2>
+        <p>Research-led design that turns details, data, and product choices into coherent visual language.</p>
+      </header>
 
-                <div class="project-info">
-                    <p class="eyebrow">Visual System</p>
-                    <h2>Visual Codes for Milk</h2>
-                    <p>
-                        A packaging system using color, patterns, and simple symbols
-                        to help shoppers identify types of milk at a glance.
-                    </p>
-                </div>
-            </article>
+      <div class="system-grid">
+        <article class="system-card">
+          <div class="system-image">
+            <img src="assets/milk.jpg" loading="lazy">
+          </div>
+          <div class="system-info">
+            <h3>Visual Codes for Milk</h3>
+            <p>Packaging system · Information design</p>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <img src="assets/conservation.jpg" alt="Eye on Conservation posters">
+        <article class="system-card">
+          <div class="system-image">
+            <img src="assets/milk.cartons.jpg" alt="Milk nutrition and product information guide" loading="lazy">
+          </div>
+          <div class="system-info">
+            <h3>Milk System Guide</h3>
+            <p>Editorial layout · Visual communication</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-                <div class="project-info">
-                    <p class="eyebrow">Poster Campaign</p>
-                    <h2>Eye on Conservation</h2>
-                    <p>
-                        A museum exhibition campaign that pairs animal illustration
-                        with bold typography and an approachable visual voice.
-                    </p>
-                </div>
-            </article>
+    <section class="works-section" aria-labelledby="campaigns-title">
+      <header class="works-section-header">
+        <p class="eyebrow">02 · Campaigns and print</p>
+        <h2 id="campaigns-title">Built for attention.</h2>
+        <p>Promotional work that combines typography, illustration, storytelling, and a strong sense of place.</p>
+      </header>
 
-            <article class="project-card">
-                <img src="assets/pikes-peak-2026.jpg" alt="Pike's Peak event poster">
+      <div class="campaign-grid">
+        <article class="campaign-card campaign-wide">
+          <div class="campaign-image">
+            <img src="assets/conservation.jpg" alt="Natural history museum exhibition campaign materials" loading="lazy">
+          </div>
+          <div class="campaign-info">
+            <h3>Natural History Museum</h3>
+            <p>Exhibition campaign · Illustration</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-                <div class="project-info">
-                    <p class="eyebrow">Event Poster</p>
-                    <h2>Pike’s Peak</h2>
-                    <p>
-                        A textured concert poster inspired by live music, vintage
-                        print design, and a mountainous landscape.
-                    </p>
-                </div>
-            </article>
+    <section class="works-section music-section" aria-labelledby="posters-title">
+      <header class="music-header">
+        <div>
+          <p class="eyebrow">03 · Poster studies</p>
+          <h2 id="posters-title">Music, type, and texture.</h2>
+        </div>
+        <p>An ongoing collection of artist-focused poster experiments.</p>
+      </header>
 
-            <article class="project-card">
-                <img src="assets/milk.jpg" alt="Visual Codes for Milk information guide">
+     <div class="poster-scroll" aria-label="Music poster collection">
+  <article class="music-poster">
+    <div class="music-poster-image">
+      <img src="assets/jimi-poster.JPG" alt="Jimi Hendrix music poster" loading="lazy">
+    </div>
+    <h3>Jimi Hendrix</h3>
+  </article>
 
-                <div class="project-info">
-                    <p class="eyebrow">Information Design</p>
-                    <h2>Milk System Guide</h2>
-                    <p>
-                        A clear visual guide explaining the color, fat, protein,
-                        and calorie codes used throughout the milk system.
-                    </p>
-                </div>
-            </article>
-        </section>
-    </main>
+  <article class="music-poster">
+    <div class="music-poster-image">
+      <img src="assets/joey-badass.JPG" alt="Joey Bada$$ music poster" loading="lazy">
+    </div>
+    <h3>Joey Bada$$</h3>
+  </article>
 
-    <footer class="site-footer">
-        <p>© 2026 Dylan Riegert</p>
-        <a href="contact.html">Get in touch</a>
-    </footer>
+  <article class="music-poster">
+    <div class="music-poster-image">
+      <img src="assets/lucki poster 6_2_2025.png" alt="Lucki music poster" loading="lazy">
+    </div>
+    <h3>Lucki Poster I</h3>
+  </article>
+
+  <article class="music-poster">
+    <div class="music-poster-image">
+      <img src="assets/lucki2.JPG" alt="Lucki music poster" loading="lazy">
+    </div>
+    <h3>Lucki Poster II</h3>
+  </article>
+
+  <article class="music-poster">
+    <div class="music-poster-image">
+      <img src="assets/mac-miller.JPG" alt="Mac Miller Circles music poster" loading="lazy">
+    </div>
+    <h3>Mac Miller</h3>
+  </article>
+</div>
+      <p class="scroll-note">Scroll horizontally to view the complete collection →</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Dylan Riegert</p>
+    <a href="mailto:hello@dylanriegert.com">hello@dylanriegert.com</a>
+  </footer>
 </body>
 </html>
