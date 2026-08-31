@@ -126,7 +126,7 @@ main { padding: clamp(56px, 7vw, 96px) var(--gutter) clamp(72px, 9vw, 128px); }
   max-width: 1100px;
   margin: 30px 0;
   font-size: clamp(3.3rem, 7vw, 7rem);
-  letter-spacing: -0.06em;
+  letter-spacing: 0.5px;
   line-height: 0.92;
 }
 .hero-bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; max-width: 760px; }
@@ -191,7 +191,7 @@ main { padding: clamp(56px, 7vw, 96px) var(--gutter) clamp(72px, 9vw, 128px); }
   border-bottom: 1px solid var(--line);
 }
 .works-header .eyebrow { grid-column: 1 / -1; margin-bottom: 20px; }
-.works-header h1 { font-size: clamp(4.7rem, 12vw, 10rem); letter-spacing: -0.08em; line-height: 0.82; }
+.works-header h1 { font-size: clamp(4.7rem, 12vw, 10rem); letter-spacing: 1px; line-height: 0.82; }
 .works-header > p:last-child { max-width: 29ch; margin-bottom: 2px; color: var(--muted); font-size: clamp(1rem, 1.3vw, 1.2rem); line-height: 1.48; }
 .works-section { padding: clamp(58px, 8vw, 110px) 0; border-bottom: 1px solid var(--line); }
 .works-section-header {
@@ -274,7 +274,7 @@ main { padding: clamp(56px, 7vw, 96px) var(--gutter) clamp(72px, 9vw, 128px); }
 .contact-hero h1 {
   font-size: clamp(4.1rem, 10vw, 9rem);
   letter-spacing: -0.08em;
-  line-height: 0.8;
+  line-height: 1.1;
 }
 .contact-hero > p:last-child {
   max-width: 30ch;
