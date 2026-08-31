@@ -3,48 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dylan Riegert</title>
+    <title>Dylan Riegert | Graphic Designer</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/uzw7mqq.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <img src="assets/Screenshot 2024-08-19 at 11.34.45 AM.png" alt="">
+    <nav class="site-nav">
+        <a class="logo-link" href="index.html">
+            <img src="assets/Screenshot 2024-08-19 at 11.34.45 AM.png" alt="Dylan Riegert logo">
+        </a>
 
-        <ul>
-            <li><a href="about.html">WORKS</a></li>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>DYLAN RIEGERT</h1>
-        <p>I’m Dylan Riegert, a University of Georgia student and emerging creative focused on graphic design, marketing, and digital experiences. 
-        I combine visual storytelling with strategic thinking to create work that feels distinctive, purposeful, and built to connect with people.
-</p>
-        <button>Get Started</button>
-    </header>
+    <main>
+        <section class="hero">
+            <p class="eyebrow">Graphic Designer · Athens, Georgia</p>
 
-    <section>
-        <h2>Our Services</h2>
+            <h1>
+                Dylan Riegert is a graphic designer creating visual identities,
+                campaigns, and communication systems.
+            </h1>
 
-        <div>
-            <img src="assets/sunglassses example guy.jpg" alt="Service 1">
-            <h3>Service 1</h3>
-        </div>
+            <div class="hero-bottom">
+                <p>
+                    I make thoughtful, clear, and memorable work across branding,
+                    print, information design, advertising, and digital spaces.
+                </p>
 
-        <div>
-            <img src="assets/sunglassses example guy.jpg" alt="Service 2">
-            <h3>Service 2</h3>
-        </div>
+                <a class="button-link" href="works.html">View Selected Work</a>
+            </div>
+        </section>
 
-        <div>
-            <img src="assets/sunglassses example guy.jpg" alt="Service 3">
-            <h3>Service 3</h3>
-        </div>
-    </section>
+        <section class="about-section">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Design that makes ideas easier to see and understand.</h2>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    I am a University of Georgia student studying graphic design
+                    and visual communication. My work combines concept development,
+                    typography, illustration, layout, and visual storytelling.
+                </p>
+
+                <p>
+                    I am especially interested in branding, advertising, editorial
+                    design, packaging, and systems that help people navigate
+                    information more clearly.
+                </p>
+            </div>
+        </section>
+
+        <section class="selected-work">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>A few recent projects.</h2>
+            </div>
+
+            <div class="work-list">
+                <a class="work-row" href="works.html">
+                    <span>Visual Codes for Milk</span>
+                    <span>Information Design</span>
+                    <span>2026</span>
+                </a>
+
+                <a class="work-row" href="works.html">
+                    <span>Eye on Conservation</span>
+                    <span>Exhibition Campaign</span>
+                    <span>2026</span>
+                </a>
+
+                <a class="work-row" href="works.html">
+                    <span>Pike’s Peak</span>
+                    <span>Event Poster</span>
+                    <span>2026</span>
+                </a>
+            </div>
+
+            <a class="text-link" href="works.html">See all work →</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Dylan Riegert</p>
+        <a href="contact.html">Get in touch</a>
+    </footer>
 </body>
 </html>
