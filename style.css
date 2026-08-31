@@ -126,3 +126,266 @@ section img {
 section h3 {
     padding: 0 15px 15px;
 }
+/* -------------------- */
+/* Global box model     */
+/* -------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f1eb;
+    color: #1c1c1c;
+    font-family: "neue-haas-grotesk-text", Arial, sans-serif;
+}
+
+/* -------------------- */
+/* Navigation           */
+/* -------------------- */
+
+nav {
+    width: 100%;
+    min-height: 85px;
+    padding: 18px 6%;
+    border-bottom: 1px solid #1c1c1c;
+    background-color: #f4f1eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+nav img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    list-style: none;
+}
+
+nav a {
+    color: #1c1c1c;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul a {
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+nav ul a:hover,
+nav ul a.active {
+    color: #b2452e;
+    border-bottom-color: #b2452e;
+}
+
+/* -------------------- */
+/* Main page spacing    */
+/* -------------------- */
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 6% 100px;
+}
+
+/* -------------------- */
+/* Intro box            */
+/* -------------------- */
+
+.works-intro {
+    max-width: 780px;
+    margin-bottom: 60px;
+    padding: 0 0 35px;
+    border-bottom: 2px solid #1c1c1c;
+}
+
+.eyebrow {
+    margin: 0 0 14px;
+    color: #b2452e;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.works-intro h1 {
+    margin: 0 0 18px;
+    font-family: "neue-haas-grotesk-display", Arial, sans-serif;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    line-height: 0.9;
+}
+
+.works-intro p:last-child {
+    max-width: 650px;
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.55;
+}
+
+/* -------------------- */
+/* Project card grid    */
+/* -------------------- */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 42px 28px;
+}
+
+.project-card {
+    overflow: hidden;
+    border: 1px solid #1c1c1c;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    box-shadow: 9px 9px 0 #1c1c1c;
+    transform: translate(-4px, -4px);
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-bottom: 1px solid #1c1c1c;
+    background-color: #dedbd5;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+/* This padding creates the interior spacing of every card */
+
+.project-content {
+    min-height: 205px;
+    padding: 26px 28px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-type {
+    margin: 0 0 10px;
+    color: #b2452e;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.project-content h2 {
+    margin: 0 0 12px;
+    font-family: "neue-haas-grotesk-display", Arial, sans-serif;
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.project-content p:last-child {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* -------------------- */
+/* Footer               */
+/* -------------------- */
+
+footer {
+    padding: 28px 6%;
+    border-top: 1px solid #1c1c1c;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* -------------------- */
+/* Responsive layout    */
+/* -------------------- */
+
+@media (max-width: 750px) {
+    nav {
+        padding: 18px 7%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 0.78rem;
+    }
+
+    main {
+        padding: 56px 7% 72px;
+    }
+
+    .works-intro {
+        margin-bottom: 40px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .project-content {
+        min-height: auto;
+        padding: 22px;
+    }
+}
