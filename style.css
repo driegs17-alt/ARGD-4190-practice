@@ -1,133 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-body {
-    margin: 0;
-    background-color: #f5f2eb;
-    color: #111111;
-    font-family: "apotek" Arial, Helvetica, sans-serif;
-}
-
-nav {
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav img {
-    width: 100px;
-}
-
-nav ul {
-    display: flex;
-    gap: 25px;
-    padding: 0;
-    list-style: none;
-}
-
-nav a {
-    color: #111111;
-    text-decoration: none;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-header {
-    padding: 100px 40px;
-}
-
-h1 {
-    max-width: 800px;
-    margin: 0;
-    font-size: 70px;
-}
-
-header p {
-    max-width: 500px;
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-button {
-    padding: 14px 22px;
-    border: none;
-    background-color: #111111;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-section {
-    padding: 70px 40px;
-    background-color: #111111;
-    color: white;
-}
-
-section div {
-    display: inline-block;
-    width: 30%;
-    margin-right: 2%;
-    background-color: white;
-    color: #111111;
-    vertical-align: top;
-}
-
-section img {
-    width: 100%;
-}
-
-section h3 {
-    padding: 0 15px 15px;
-}
 /* -------------------- */
-/* Global box model     */
+/* Global styles        */
 /* -------------------- */
 
 * {
@@ -140,9 +12,10 @@ html {
 
 body {
     margin: 0;
-    background-color: #f4f1eb;
-    color: #1c1c1c;
-    font-family: "neue-haas-grotesk-text", Arial, sans-serif;
+    background-color: #f5f2eb;
+    color: #111111;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
+    line-height: 1.2;
 }
 
 /* -------------------- */
@@ -152,13 +25,12 @@ body {
 nav {
     width: 100%;
     min-height: 85px;
-    padding: 18px 6%;
-    border-bottom: 1px solid #1c1c1c;
-    background-color: #f4f1eb;
+    padding: 20px 40px;
+    border-bottom: 1px solid #111111;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-link {
@@ -168,67 +40,60 @@ nav {
 
 nav img {
     display: block;
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
+    width: 100px;
+    height: auto;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-
     display: flex;
     align-items: center;
-    gap: 28px;
-
+    gap: 25px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 nav a {
-    color: #1c1c1c;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-nav ul a {
     padding: 8px 0;
     border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease, color 0.2s ease;
+    color: #111111;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-nav ul a:hover,
-nav ul a.active {
-    color: #b2452e;
+nav a:hover,
+nav a.active {
     border-bottom-color: #b2452e;
+    color: #b2452e;
 }
 
 /* -------------------- */
-/* Main page spacing    */
+/* Works page layout    */
 /* -------------------- */
 
 main {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 80px 6% 100px;
+    padding: 80px 40px 100px;
 }
-
-/* -------------------- */
-/* Intro box            */
-/* -------------------- */
 
 .works-intro {
     max-width: 780px;
     margin-bottom: 60px;
-    padding: 0 0 35px;
-    border-bottom: 2px solid #1c1c1c;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #111111;
 }
 
 .eyebrow {
     margin: 0 0 14px;
     color: #b2452e;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -237,22 +102,23 @@ main {
 
 .works-intro h1 {
     margin: 0 0 18px;
-    font-family: "neue-haas-grotesk-display", Arial, sans-serif;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
     font-size: clamp(3rem, 7vw, 6.5rem);
     font-weight: 700;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.055em;
     line-height: 0.9;
 }
 
 .works-intro p:last-child {
     max-width: 650px;
     margin: 0;
-    font-size: 1.15rem;
-    line-height: 1.55;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 /* -------------------- */
-/* Project card grid    */
+/* Project grid         */
 /* -------------------- */
 
 .project-grid {
@@ -263,7 +129,7 @@ main {
 
 .project-card {
     overflow: hidden;
-    border: 1px solid #1c1c1c;
+    border: 1px solid #111111;
     background-color: #ffffff;
 
     display: flex;
@@ -273,7 +139,7 @@ main {
 }
 
 .project-card:hover {
-    box-shadow: 9px 9px 0 #1c1c1c;
+    box-shadow: 8px 8px 0 #111111;
     transform: translate(-4px, -4px);
 }
 
@@ -281,7 +147,7 @@ main {
     width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
-    border-bottom: 1px solid #1c1c1c;
+    border-bottom: 1px solid #111111;
     background-color: #dedbd5;
 }
 
@@ -298,8 +164,6 @@ main {
     transform: scale(1.04);
 }
 
-/* This padding creates the interior spacing of every card */
-
 .project-content {
     min-height: 205px;
     padding: 26px 28px 30px;
@@ -312,6 +176,7 @@ main {
 .project-type {
     margin: 0 0 10px;
     color: #b2452e;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -320,7 +185,7 @@ main {
 
 .project-content h2 {
     margin: 0 0 12px;
-    font-family: "neue-haas-grotesk-display", Arial, sans-serif;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
     font-size: clamp(1.7rem, 3vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.04em;
@@ -329,6 +194,7 @@ main {
 
 .project-content p:last-child {
     margin: 0;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -338,41 +204,46 @@ main {
 /* -------------------- */
 
 footer {
-    padding: 28px 6%;
-    border-top: 1px solid #1c1c1c;
+    padding: 28px 40px;
+    border-top: 1px solid #111111;
 }
 
 footer p {
     margin: 0;
+    font-family: "apotek", Arial, Helvetica, sans-serif;
     font-size: 0.85rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
 /* -------------------- */
-/* Responsive layout    */
+/* Mobile layout        */
 /* -------------------- */
 
 @media (max-width: 750px) {
     nav {
-        padding: 18px 7%;
+        padding: 18px 24px;
         flex-direction: column;
         align-items: flex-start;
         gap: 18px;
     }
 
+    nav img {
+        width: 82px;
+    }
+
     nav ul {
         width: 100%;
         justify-content: space-between;
-        gap: 12px;
+        gap: 10px;
     }
 
     nav a {
-        font-size: 0.78rem;
+        font-size: 0.75rem;
     }
 
     main {
-        padding: 56px 7% 72px;
+        padding: 56px 24px 72px;
     }
 
     .works-intro {
@@ -387,5 +258,9 @@ footer p {
     .project-content {
         min-height: auto;
         padding: 22px;
+    }
+
+    footer {
+        padding: 24px;
     }
 }
