@@ -328,6 +328,10 @@ main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.conservation-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .campaign-grid {
     grid-template-columns: 1fr;
 }
@@ -476,6 +480,12 @@ main {
 
 .site-footer a:hover {
     color: var(--accent);
+}
+
+@media (max-width: 900px) {
+    .conservation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* Mobile */
