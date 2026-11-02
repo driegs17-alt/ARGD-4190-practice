@@ -9,7 +9,7 @@
   >
   <title>Case Studies — Dylan Riegert</title>
   <link rel="stylesheet" href="https://use.typekit.net/uzw7mqq.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
 
@@ -96,7 +96,7 @@
     <!-- 01 — Featured: podcast identity (own page) -->
     <a class="cs-feature reveal" href="stdwytk.html">
       <div class="cs-feature-media">
-        <img src="assets/web/stdwytk/devices.jpg" width="2200" height="1530"
+        <img src="assets/img/stdwytk/devices.jpg" width="2200" height="1530"
              alt="The Stuff They Don’t Want You to Know identity on a tablet, phone and watch">
       </div>
       <div class="cs-feature-text">
@@ -127,12 +127,12 @@
 
       <figure class="case-hero case-hero--duo reveal">
         <img
-          src="assets/web/milk-cartons.jpg"
+          src="assets/img/milk/cartons.jpg"
           width="1033" height="1600"
           alt="Seven milk carton illustrations: oat, soy, almond, coconut, whole, 2% reduced and 2%, each coded with color, dot pattern and fill level"
         >
         <img
-          src="assets/web/milk-spec.jpg"
+          src="assets/img/milk/spec-sheet.jpg"
           width="1040" height="1600"
           alt="Project sheet for Visual Codes for Milk with the project description and the system key"
           loading="lazy"
@@ -261,11 +261,11 @@
       </header>
 
       <figure class="case-hero case-hero--trio reveal">
-        <img src="assets/web/conservation-01.jpg" width="793" height="1224"
+        <img src="assets/img/conservation/poster-01.jpg" width="793" height="1224"
              alt="Poster 01: a green fish centered inside a large pink circle" loading="lazy">
-        <img src="assets/web/conservation-02.jpg" width="793" height="1224"
+        <img src="assets/img/conservation/poster-02.jpg" width="793" height="1224"
              alt="Poster 02: a large pink fish leaps down the right side above the exhibition details" loading="lazy">
-        <img src="assets/web/conservation-03.jpg" width="792" height="1224"
+        <img src="assets/img/conservation/poster-03.jpg" width="792" height="1224"
              alt="Poster 03: two fish frame the exhibition title at the top and bottom" loading="lazy">
       </figure>
 
@@ -347,13 +347,13 @@
 
       <figure class="case-hero case-hero--duo case-hero--dark reveal">
         <img
-          src="assets/web/pikes-peak-lineup.jpg"
+          src="assets/img/pikes-peak/lineup.jpg"
           width="900" height="1600"
           alt="Pike’s Peak lineup poster: vintage concert-bill type over a painted mountain scene, with a timed lineup for April 17th"
           loading="lazy"
         >
         <img
-          src="assets/web/pikes-peak-headliner.jpg"
+          src="assets/img/pikes-peak/headliner.jpg"
           width="613" height="792"
           alt="Pike’s Peak headliner poster announcing Cedric Gervais for March 15th, with a snowy illustration of the chapter house"
           loading="lazy"
@@ -419,32 +419,32 @@
 
       <div class="case-gallery case-gallery--posters reveal">
         <figure>
-          <img src="assets/web/poster-jimi-hendrix.jpg" width="1200" height="1600"
+          <img src="assets/img/music/jimi-hendrix.jpg" width="1200" height="1600"
                alt="Jimi Hendrix poster with oversized purple and yellow type and a color palette strip" loading="lazy">
           <figcaption><span>Jimi Hendrix</span><span>Are You Experienced</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/web/poster-joey-badass.jpg" width="1200" height="1600"
+          <img src="assets/img/music/joey-badass.jpg" width="1200" height="1600"
                alt="Joey Bada$$ poster with layered blue stripes and red type" loading="lazy">
           <figcaption><span>Joey Bada$$</span><span>Artist study</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/web/poster-mac-miller.jpg" width="864" height="1296"
+          <img src="assets/img/music/mac-miller.jpg" width="864" height="1296"
                alt="Mac Miller Circles poster in green and cream with circular type" loading="lazy">
           <figcaption><span>Mac Miller</span><span>Circles</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/web/poster-lucki-alternative-trouble.jpg" width="792" height="1224"
+          <img src="assets/img/music/lucki-alternative-trouble.jpg" width="792" height="1224"
                alt="Lucki Alternative Trouble poster with a tracklist and repeated red type" loading="lazy">
           <figcaption><span>Lucki</span><span>Alternative Trouble</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/web/poster-lucki-new-money.jpg" width="1200" height="1600"
+          <img src="assets/img/music/lucki-new-money.jpg" width="1200" height="1600"
                alt="Lucki New Money poster with condensed type and a fan of cash" loading="lazy">
           <figcaption><span>Lucki</span><span>New Money</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/web/poster-lucki-camel-jr.jpg" width="864" height="1296"
+          <img src="assets/img/music/lucki-camel-jr.jpg" width="864" height="1296"
                alt="Lucki poster with a pink arch, blue gradient type and an alternative trap definition" loading="lazy">
           <figcaption><span>Lucki</span><span>Alternative Trap</span></figcaption>
         </figure>
@@ -467,21 +467,6 @@
     <a href="mailto:driegs17@icloud.com">driegs17@icloud.com</a>
   </footer>
 
-  <script>
-    (function () {
-      var els = document.querySelectorAll(".reveal");
-      if (!("IntersectionObserver" in window) ||
-          window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        els.forEach(function (el) { el.classList.add("is-in"); });
-        return;
-      }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
-        });
-      }, { rootMargin: "0px 0px -8% 0px" });
-      els.forEach(function (el) { io.observe(el); });
-    })();
-  </script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
